@@ -1,5 +1,7 @@
 # harbor-cluster-operator
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/5788139d57264047acf21d6cf2fd69ac)](https://app.codacy.com/manual/goharbor/harbor-cluster-operator?utm_source=github.com&utm_medium=referral&utm_content=steven-zou/harbor-cluster-operator&utm_campaign=Badge_Grade_Dashboard)
+
 **ATTENTIONS: THIS PROJECT IS STILL UNDER DEVELOPMENT AND NOT READY YET.**
 
 [Harbor](https://github.com/goharbor/harbor) is a CNCF hosted open source trusted cloud native registry project that stores, signs, and scans content.
