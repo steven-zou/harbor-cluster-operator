@@ -25,6 +25,7 @@ import (
 
 	goharborv1 "github.com/goharbor/harbor-cluster-operator/api/v1"
 	"github.com/goharbor/harbor-cluster-operator/controllers"
+	pctrl "github.com/goharbor/harbor-cluster-operator/controllers/database/ctrl"
 	minio "github.com/goharbor/harbor-cluster-operator/controllers/storage/minio/api/v1"
 	redisCli "github.com/spotahome/redis-operator/api/redisfailover/v1"
 	"k8s.io/apimachinery/pkg/runtime"
@@ -95,6 +96,9 @@ func main() {
 		os.Exit(1)
 	}
 	// +kubebuilder:scaffold:builder
+
+	// Start psql operator controller in a separate thread
+	go pctrl.Start()
 
 	setupLog.Info("starting manager")
 	if err := mgr.Start(ctrl.SetupSignalHandler()); err != nil {

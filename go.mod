@@ -14,6 +14,7 @@ require (
 	github.com/onsi/ginkgo v1.12.1
 	github.com/onsi/gomega v1.10.1
 	github.com/pkg/errors v0.9.1
+	github.com/sirupsen/logrus v1.6.0
 	github.com/spotahome/redis-operator v1.0.0
 	github.com/zalando/postgres-operator v1.5.0
 	k8s.io/api v0.19.0-rc.3
